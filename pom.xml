@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+ <modelVersion>4.0.0</modelVersion>
+
+ <groupId>com.pt</groupId>
+ <artifactId>maven-java-project</artifactId>
+ <version>1.0</version>
+ <packaging>jar</packaging>
+
+ <name>Maven-Java-Project-Update</name>
+
+ <properties>
+   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+ </properties>
+
+ <dependencies>
+ 
+   <dependency>
+     <groupId>junit</groupId>
+     <artifactId>junit</artifactId>
+     <version>3.8.1</version>
+     <scope>test</scope>
+   </dependency>
+   </dependencies>
+ <distributionManagement>
+        <repository>
+          <id>nexus</id>
+          <name>Mithun Technologies Releases Nexus Repository</name>
+          <url>http://localhost:8081/repository/maven-releases</url>
+        </repository>
+        <snapshotRepository>
+          <id>nexus</id>
+          <name>Mithun Technologies Snapshot Nexus Repository </name>
+          <url>http://localhost:8081/repository/maven-snapshots</url>
+        </snapshotRepository>
+      </distributionManagement> 
+ 
+ 
+</project>
